@@ -5,13 +5,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Pavel Tim</title>
+    <title>I-Smith</title>
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset("/css/normalize.css") }}">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset("/css/base.css") }}"><link rel="stylesheet" type="text/css" media="screen" href="{{ asset("/css/header.css") }}"><link rel="stylesheet" type="text/css" media="screen" href="{{ asset("/css/footer.css") }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset("/css/base.css") }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset("/css/footer.css") }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset("/css/header.css") }}">
 </head>
 <body>
-    {{ include('_header.html.twig') }}
+    <div class="header">
+        <img src="{{ asset("/images/notebook.svg") }}" class="header__pic"/>
+        <span class="header__heading">Hotel I-Smith</span>
+    </div>
     <div class="content"></div>
-    {{ include('_footer.html.twig') }}
+    <div class="footer">
+        <div class="footer__text">
+        Created by I-Sepp OÜ - <a href="http://i-smith.ee/">www.i-smith.ee</a>
+        </div>
+    </div>
 </body>
 </html>
